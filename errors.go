@@ -44,6 +44,9 @@ type ErrorObject struct {
 
 	// Code is an application-specific error code, expressed as a string value.
 	Code string `json:"code,omitempty"`
+	
+	// Source contains references to the source of the error
+	Source string `json:"source,omitempty"`
 
 	// Meta is an object containing non-standard meta-information about the error.
 	Meta *map[string]interface{} `json:"meta,omitempty"`
